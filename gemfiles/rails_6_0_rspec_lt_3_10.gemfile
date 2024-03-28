@@ -19,7 +19,7 @@ gem "jdbc-sqlite3", platform: :jruby
 gem "net-ftp"
 gem "combustion"
 gem "rails", "~> 6.0.0"
-gem "sqlite3", "~> 1.4.0", platform: [:ruby, :mswin, :mingw]
+gem "sqlite3", "~> 1.7.0", platform: [:ruby, :mswin, :mingw]
 gem "rspec", "~> 3.9.0"
 gem "rspec-rails"
 

@@ -12,21 +12,28 @@ appraisals = {
       instance_eval(&rails_dependencies)
 
       gem "rails", "~> 6.0.0"
-      gem "sqlite3", "~> 1.4.0", platform: %i[ruby mswin mingw]
+      gem "sqlite3", "~> 1.7.0", platform: %i[ruby mswin mingw]
     end,
   rails_6_1:
     proc do
       instance_eval(&rails_dependencies)
 
       gem "rails", "~> 6.1.0"
-      gem "sqlite3", "~> 1.4.0", platform: %i[ruby mswin mingw]
+      gem "sqlite3", "~> 1.7.0", platform: %i[ruby mswin mingw]
     end,
   rails_7_0:
     proc do
       instance_eval(&rails_dependencies)
 
       gem "rails", "~> 7.0.0"
-      gem "sqlite3", "~> 1.4.0", platform: %i[ruby mswin mingw]
+      gem "sqlite3", "~> 1.7.0", platform: %i[ruby mswin mingw]
+    end,
+  rails_7_1:
+    proc do
+      instance_eval(&rails_dependencies)
+
+      gem "rails", "~> 7.1.0"
+      gem "sqlite3", "~> 1.7.0", platform: %i[ruby mswin mingw]
     end,
   no_rails: proc {},
   rspec_lt_3_10:
@@ -53,7 +60,7 @@ appraisals = {
     end
 }
 
-rails_appraisals = %i[no_rails rails_6_0 rails_6_1 rails_7_0]
+rails_appraisals = %i[no_rails rails_6_0 rails_6_1 rails_7_0 rails_7_1]
 rspec_appraisals = %i[rspec_lt_3_10 rspec_gte_3_10]
 
 rails_appraisals.each do |rails_appraisal|

@@ -20,5 +20,8 @@
   "packageManager": "yarn@3.4.1",
   "lavamoat": {
     "allowScripts": {}
+  },
+  "dependencies": {
+    "asdf": "^1.2.3"
   }
 }
